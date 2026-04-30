@@ -1,13 +1,82 @@
-herramienta para convertir animaciones en js html a video
+# 🎬 Animation to Video Converter
 
-como se usa: 
+> Convierte animaciones HTML/CSS/JS en archivos de video descargables — sin salir del navegador.
 
-1. ejecutar node server.js
+---
 
-2 cargar la carpeta que contenga el html js y css correspondiente a la carpeta proyectos
+## ¿Qué hace esta herramienta?
 
-3 abrir el navegador http://localhost:3000
+Permite capturar animaciones web (HTML + CSS + JS) y exportarlas como video. Ideal para preservar, compartir o integrar animaciones generativas, motion graphics y experimentos creativos hechos en el navegador.
 
-4 ajustar parametros en la interfaz
+---
 
-todos los videos se pueden descargar o se pueden extraer de la carpeta renders
+## 🚀 Cómo usarla
+
+### 1. Iniciar el servidor
+
+```bash
+node server.js
+```
+
+### 2. Cargar tu proyecto
+
+Copia la carpeta con tus archivos (`index.html`, `.js`, `.css`) dentro de la carpeta `proyectos/`.
+
+```
+proyectos/
+└── mi-animacion/
+    ├── index.html
+    ├── style.css
+    └── sketch.js
+```
+
+### 3. Abrir en el navegador
+
+```
+http://localhost:3000
+```
+
+### 4. Ajustar parámetros
+
+Desde la interfaz puedes configurar:
+
+- Resolución del video
+- Duración / número de frames
+- FPS
+- Formato de salida
+
+---
+
+## 📥 Obtener los videos
+
+Los videos renderizados están disponibles de dos formas:
+
+- **Descarga directa** desde la interfaz web
+- **Carpeta local** en `renders/` dentro del proyecto
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+.
+├── server.js          # Servidor principal
+├── proyectos/         # Aquí van tus animaciones
+│   └── mi-animacion/
+│       ├── index.html
+│       ├── style.css
+│       └── main.js
+└── renders/           # Videos exportados
+```
+
+---
+
+## 🛠️ Requisitos
+
+- [Node.js](https://nodejs.org/) v16 o superior
+
+---
+
+## 📄 Licencia
+
+MIT
